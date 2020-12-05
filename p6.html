@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <title>Employee form</title>
+</head>
+<body>
+    <h2>This my html forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+    <div> <input type="text"name="myname"></div> <br>
+    <label for="role">Role:</label><div>  <input type="text"name="myrole"></div><br>
+    <label for="email">Email:</label><div><input type="text"name="myEmail"></div><br>
+    <label for="date">Date:</label><div><input type="date" name="mydate" id="myemail"></div><br>
+    <label for="bonus">Bonus:</label><div><input type="number" name="mybonus" id="myemail"></div><br>
+    <label for="">Eligibility:</label><div> <input type="checkbox" name="myeligibility" checked></div><br>
+    <label for="gender">Sex:</label><div>  MALE <input type="radio" name="mygender">FEMALE <input type="radio" name="mygender">OTHERS <input type="radio" name="mygender"><div></div>
+    <div>
+      Write about your self: <br> <textarea name="mytext" cols="30" rows="10"></textarea>
+      <div>
+          <label for="car">Car</label>
+          <select name="mycar" id="car">
+              <option value="indica"selected>indica</option>
+              <option value="swf">swift</option>
+          </select>
+      </div>
+    </div>
+    <input type="submit" value="submit Now">
+    <input type="reset" value="reset Now">
+    </form>
+</body>
+</html>
