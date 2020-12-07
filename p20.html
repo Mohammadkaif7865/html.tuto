@@ -19,10 +19,25 @@
               margin: 13px 20px;
              
           }
+          .search{
+              color: white;
+              padding: 14px 4px;
+              border-radius: 7px;
+          }
           .navbar li a{
               padding: 3px 3px;
               text-decoration: none;
               color: white;
+          }
+          .navbar li a:hover{
+                  background-color: red;
+                  color: royalblue;
+          }
+          .navbar input{
+              border: 2px solid red;
+              border-radius: 4px;
+              padding: 3p 17px;
+              width: 129px;
           }
     </style>
 </head>
@@ -33,8 +48,11 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contactus</a></li>
-                <div class="search">this is a search box</div>
+                <li><a href="#">Contact_us</a></li>
+                <div class="search">
+                  <input type="text" name="Search" id="search" placeholder="search this web site">
+
+                </div>
             </ul>
         </nav>
     </header>
