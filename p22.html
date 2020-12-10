@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pos-absolute,relative fix and sticky</title>
+    <style>
+        /*postion absolute relative fix sticky*/
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        .container{
+            border: 2px black;
+            background-color: khaki;
+            height: 3400px;
+        }
+        #box3{ position: sticky;
+                top: 44px;
+                left: 34px;
+            /*position: static;
+               top: 34px;
+               left: 34px;*/
+            /* position: relative;
+               top: 34px;
+               left: 34px;*/
+            /* position: absolute;
+             top: 34px;
+             left: 34px;*/
+            /*  position: fixed;
+            right: 4px;*/
+            /* top: 50px;
+            left: 50px; */
+        }
+    </style>
 </head>
 <body>
-    
+   <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"> chat with me</div>
+    <div class="box" id="box4"></div>
+   </div>
 </body>
 </html>
