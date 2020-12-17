@@ -10,6 +10,15 @@ function sum(a,b,c)
     return d;
     //console.log("this is a terminating point");
 }
+function nsum()
+{
+for(let i=0;i<=10;i++)
+{ 
+    b=b+i;
+}
+return b;
+}
+let b = 0;
 let name ="monu";
 let name1 ="monu1";
 let name3 ="monu3";
@@ -23,7 +32,9 @@ greet(name4,greetText);
 greet(name,greetText);
 // let returnval = greet(name3);
 let returnval = sum(1,2,3);
+let returnval1 = nsum();
 console.log( "sum:" + returnval);
+console.log( "sum:" + returnval1);
 
 // console.log(name +" is a bad boy");
 // console.log(name1 +" is a bad boy");
