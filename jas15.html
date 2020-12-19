@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is math object in javascript</h1>
+        E: 2.718281828459045
+        LN2: 0.6931471805599453
+        LN10: 2.302585092994046
+        LOG2E: 1.4426950408889634
+        LOG10E: 0.4342944819032518
+        PI: 3.141592653589793
+        SQRT1_2: 0.7071067811865476
+        SQRT2: 1.4142135623730951
+    </div>
+    <script>
+        //printing the math object
+        let m = Math;
+        console.log(m);
+        console.log("this is the value of MATH.E : ", Math.E);
+        console.log("this is the value of MATH.LN2 : ", Math.LN2);
+        console.log("this is the value of MATH.LN10 : ", Math.LN10);
+        console.log("this is the value of MATH.LOG2E : ", Math.LOG2E);
+        console.log("this is the value of MATH.PI : ", Math.PI);
+        console.log("this is the value of MATH.SQRT2 : ", Math.SQRT2);
+        //funtions of math object
+        let a =23.454565;
+        let b =35.354553;
+        console.log("the value of a,b :" ,a,b);
+        console.log("the round  value of a,b :" ,Math.round(a),Math.round(b));
+        console.log("3 raise to power  2 is: ",Math.pow(3,2));
+        console.log("6 raise to power  7 is: ",Math.pow(6,7));
+        console.log("5 raise to power  4 is: ",Math.pow(5,4));
+        console.log("Square root of 625 is: ",Math.sqrt(625));
+        console.log("tan of 34 degree: ",Math.tan(3.14));
+        console.log("tan of 34 degree: ",Math.tan(3.14));
+        //ceil and floor
+        console.log("round up of 6.7 :",Math.ceil(6.7));
+        console.log("round down of 6.7 :",Math.floor(6.7));
+        //absolute
+        console.log("Absolute value of-56.6666 is :",Math.abs(-56.6666));
+        //trigo funtion
+        console.log(" the value of sin(pi)",Math.sin(Math.PI));
+        console.log(" the value of tan(pi)",Math.tan(Math.PI));
+        console.log(" the value of cos(pi)",Math.cos(Math.PI));
+        console.log(" the value of sinh(pi)",Math.sinh(Math.PI));
+        console.log(" the value of sin(pi)",Math.sin(Math.PI/2));
+        //min and max funtion
+        console.log("Min value of 4,5,6,72,34,4 is :",Math.min(4,5,6,72,34,4));
+        console.log("Max value of 4,5,6,72,34,4 is :",Math.max(4,5,6,72,34,4));
+        //Generating a random number
+        let r = Math.random();
+        // Generating a random number b/w (a,b) = a + (b-a)*Mathrandom()
+        let x = 1;
+        let y = 100;
+        let r1_100 =x + (y-x)*Math.random();
+        console.log("Random numner is :  ",r);
+        console.log("Random numner is :  ",r1_100);
+        
+    </script>
+</body>
+</html>

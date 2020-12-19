@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVASCRIPT settimeout and cleartimeout</title>
 </head>
+
 <body>
     <div class="container">
-       time now is <span id="time"></span>
+        time now is <span id="time"></span>
     </div>
     <script>
         console.log("this is new");
         // setTimeout-->allow us run the funtion once after the interval of Time
         // clearTimeout-->allow us run the funtion repeatedly after the interval of time
-        function great(name,bye)
-        {
-              console.log("Hello good morning "+ name + " "+ bye);
+        function great(name, bye) {
+            console.log("Hello good morning " + name + " " + bye);
         }
         // timeOut = setTimeout(great,5000, "monu","see you later");
         // console.log(timeOut);
         // clearTimeout(timeOut);
-        Intervalid=setInterval(great, 1000,"monu"," good night ");
+        Intervalid = setInterval(great, 1000, "monu", " good night ");
         clearInterval(Intervalid);
-        function displaytime(){
+        function displaytime() {
             time = new Date();
             console.log(time);
-            document.getElementById('time').innerHTML  =time;
-          }
-          setInterval(displaytime, 1000);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime, 1000);
     </script>
 </body>
+
 </html>
