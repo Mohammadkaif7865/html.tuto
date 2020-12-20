@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASON</title>
+</head>
+<body>
+    <div class="container"> this is my container</div>
+    <script>
+        let jasonObj={
+            name: "monu",
+            channel : "mv",
+            friend: "sonu",
+            food: "chicken", //#chicken lover
+        }
+        console.log(jasonObj);
+        let myJasonStr = JSON.stringify(jasonObj);
+        console.log(myJasonStr);
+        myJasonStr = myJasonStr.replace("monu","nonu");
+        console.log(myJasonStr);
+        myJasonStr = JSON.parse(myJasonStr);
+        console.log(myJasonStr);
+
+    </script>
+</body>
+</html>
