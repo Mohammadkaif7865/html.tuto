@@ -3,7 +3,7 @@
 
 //asychronous or non blocking
 // -line by line execution is not guaranteed
-// -call back funtion is require to fire
+// -call backs funtion is require to fire
 const fs = require("fs");
 fs.readFile("gd.txt","utf-8",(err , data)=>{
     console.log(data);
