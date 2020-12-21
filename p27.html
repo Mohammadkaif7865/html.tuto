@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+         h1{
+             background-color: green;
+             color: white;
+             font-weight: bold;
+             text-align: center;
+         }
+         /* when p is contained by li and li is contained by div */
+         div ul li {
+             color: red;
+             background-color: black;
+         }
+         /* when p right inside of div */
+         div > p{
+               color: yellow; 
+               background-color: green;
+               font-weight: bold;
+         }
+         /* css for sibling and right after the div */
+         div + p{
+             color: white;
+             background-color: greenyellow;
+         }
+    </style>
+</head>
+
+<body>
+    <h1>this is my heading</h1>
+    <div class="contianer">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    this is a list <p>
+                        this is another para in a para
+                    </p>
+                </li>
+                <li>this is another</li>
+            </ul>
+        </div>
+        <p>this is anothert contianer</p>
+    </div>
+    <p>this is the third para</p>
+</body>
+
+</html>
