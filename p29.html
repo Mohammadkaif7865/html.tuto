@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+
+        }
+
+        section {
+            height: 344px;
+            font-family: 'Pacifico', cursive;
+            margin: 3px 230px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        header {
+            display: flex;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .navigation {
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact_us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to css and html 5</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima iste, laborum in dolor totam error eveniet
+            cum recusandae saepe vitae inventore impedit iure illo distinctio harum, magni voluptates non quis facere
+            atque officia? Itaque dicta voluptate ipsam. Laborum ducimus reiciendis velit dicta? Iste, sunt veniam
+            laudantium vel, doloremque sequi voluptate, sit doloribus tenetur quae minima quaerat corrupti. Odio
+            deserunt maxime cumque non facilis corrupti molestias hic sit ab ipsam. Molestias, nulla. Amet, cupiditate
+            blanditiis? Eos pariatur cupiditate asperiores, delectus necessitatibus beatae obcaecati tenetur architecto
+            non ea cumque voluptate. Hic consequuntur reprehenderit omnis deleniti maxime, accusamus officia. Recusandae
+            adipisci alias rem, quaerat, et corrupti laboriosam odit possimus nemo cupiditate libero tenetur veritatis
+            cumque similique perspiciatis ipsum odio, impedit iure aliquam commodi nesciunt? Nostrum odio omnis quasi
+            fugiat rerum molestiae nihil libero, voluptatem amet laboriosam voluptates veritatis sed saepe alias,
+            nesciunt tenetur ut ipsum doloribus aut. Laboriosam, tempora. Possimus incidunt enim rerum totam similique,
+            alias earum recusandae ut consequatur corrupti. Quam libero ea nam minus magnam provident magni soluta
+            similique dolorem nulla eum, repellat iusto quod perferendis totam alias temporibus ut mollitia eaque
+            repudiandae necessitatibus iste adipisci fugit fugiat? Officiis debitis assumenda eius molestias quod
+            soluta, consectetur sunt, animi illum ipsum explicabo ab laborum temporibus blanditiis suscipit repudiandae
+            quibusdam! Assumenda doloribus, maxime maiores illum molestias autem at quo accusamus vel nam voluptates
+            excepturi distinctio velit fuga hic ea eius consectetur fugit eaque blanditiis dolor alias corporis
+            architecto! Et, tempore quasi qui necessitatibus corrupti deserunt, provident ducimus in iure quis velit
+            eaque delectus porro obcaecati esse laudantium, alias est. Repudiandae hic, vel, provident, dolore a
+            consectetur in ipsa placeat dolor itaque quos beatae cum voluptatum maiores impedit autem soluta
+            perferendis. Doloremque ea dicta iste, officia animi iusto aut aperiam maiores corrupti, quisquam labore
+            accusantium inventore ex commodi facere quam impedit architecto omnis delectus? Voluptates maxime recusandae
+            suscipit ullam qui, ducimus quod totam quia dolores? Distinctio dolorem alias libero veniam impedit
+            molestias, voluptates accusantium beatae fugit obcaecati esse, ut eveniet ipsum, aliquam nisi maiores quo
+            similique tenetur quos eaque expedita consequatur nesciunt? Cum ipsam unde corporis dignissimos.
+        </p>
+    </section>
+</body>
+
+</html>

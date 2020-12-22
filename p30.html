@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: tomato;
+            /* box-shadow: offsert-x offset-y blurradius spread-radius color; */
+            /* box-shadow: 10px 13px 14px rgb(4, 0, 255); */
+            box-shadow: 10px 13px rgb(4, 0, 255),10px 13px rgb(221, 32, 174);
+            box-shadow: inset 10px 13px 14px rgb(0, 255, 55);
+        }
+        .card h1{
+            text-shadow: 3px 4px 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>card1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto eaque beatae quidem magnam sapiente aliquid harum nemo omnis delectus et? Totam velit exercitationem suscipit asperiores voluptates architecto inventore corrupti? Minus est quis voluptatibus exercitationem!</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus mollitia repellendus adipisci vitae excepturi quos neque consectetur soluta molestias assumenda nulla eum consequuntur aperiam ipsam eius a voluptates dicta, architecto repellat eligendi tenetur?</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>card3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel architecto est quia doloremque saepe consectetur illo atque hic pariatur ut, consequuntur magni voluptatibus, quaerat neque sed! Vel minima soluta magni modi consequuntur voluptatum maxime?</p>
+        </div>
+        <div class="card" id="card4">
+            <h1>card4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam quod id? Libero consequuntur sunt omnis ut facilis doloribus eius quos sequi. Facilis dignissimos neque odio officiis similique magnam facere.</p>
+        </div>
+    </div>
+</body>
+</html>
