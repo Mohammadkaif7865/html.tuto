@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -96,7 +96,10 @@
         align-items: center;
         position: sticky;
         top: 0px;
+        z-index: 45;
+  
     }
+    
 
     #navbar::before {
         content: "";
@@ -107,7 +110,7 @@
         height: 100%;
         width: 100%;
         z-index: -1;
-        opacity: 0.7;
+
     }
 
     /* Navigation Bar: Logo and Image */
@@ -144,6 +147,7 @@
     #navbar ul li a:hover {
         color: black;
         background-color: white;
+        
     }
 
     /* Home Section */
@@ -422,7 +426,7 @@
         const addorder = (ev) => {
             ev.preventDefault();
             let order = {
-                id: Date.now();
+                id: Date.now(),
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
                 phoneno: document.getElementById("phone").value,
@@ -430,11 +434,12 @@
 
             }
             orders.push(order);
-            document.form[0].reset();
+            document.forms[0].reset();
             console.warn("Ordered!!!", { orders });
             let pre = document.querySelector('#msg pre');
-            pre.textContent = '\n' + JSON.stringify(orders, '\t', 2);
-
+            pre.textContent = '\n' + JSON.stringify(orders, '\t', 5);
+            // let result = JSON.stringify("Your orders",orders);
+            // console.log(result);
 
         }
         document.addEventListener('DOMContentLoaded', () => {
