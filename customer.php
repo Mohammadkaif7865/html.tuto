@@ -6,7 +6,7 @@
     /*creaste connection*/
     $conn =mysqli_connect($serverName,$userName,$password,$dbname);
     if(!$conn){
-        echo "failed to connect"
+        echo "failed to connect";
         exit();
 
     }
